@@ -1,0 +1,13 @@
+{
+    "name": "ClosetChild JPY To PLN",
+    "version": "0.1.0",
+    "description": "JPY to PLN conversion",
+    "content_scripts": [
+        {
+            "matches": ["*://*.closetchildonlineshop.com/*"],
+            "js": ["conversionScript.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 3
+}
